@@ -1,0 +1,158 @@
+body {
+    background-color: black;
+    color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+}
+
+.sidebar {
+    margin: 2rem;
+    padding: 1rem;
+    border-radius: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.33);
+    overflow-y: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 15rem;
+    height: 100vh;
+}
+
+.sidebar ul {
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar li {
+    list-style: none;
+    margin: 1rem 0;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    letter-spacing: 1px;
+    display: block;
+    padding: 0.5rem;
+    transition: background-color 0.3s ease;
+}
+
+.sidebar a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.home_content {
+    margin-left: 18rem;
+    padding: 2rem;
+    width: calc(100% - 18rem);
+    display: flex;
+    flex-direction: column;
+}
+
+.home_title {
+    font-size: 36px;
+    font-weight: 700;
+    color: white;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    margin: 1rem 0;
+    text-align: left;
+    width: 100%;
+}
+
+.home_task_preview {
+    margin-top: 2rem;
+    padding: 1rem;
+    border-radius: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.33);
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    max-width: 800px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.title.preview {
+    font-size: 16px;
+    font-weight: 350;
+    color: white;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    margin: 1rem 0;
+    text-align: left;
+    width: 100%;
+}
+
+.task_preview {
+    padding: 1rem;
+    border-radius: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.33);
+    background-color: rgba(0, 0, 0, 0.7);
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.task_preview ul {
+    padding: 0;
+    margin: 0;
+}
+
+.task_preview li {
+    list-style: none;
+    margin: 0.5rem 0;
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        width: 12rem;
+    }
+
+    .home_content {
+        margin-left: 14rem;
+    }
+
+    .home_title {
+        font-size: 28px;
+    }
+
+    .home_task_preview {
+        width: 100%;
+        max-width: 95%;
+    }
+
+    .sidebar a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+    }
+
+    .home_content {
+        margin-left: 0;
+    }
+
+    .home_title {
+        font-size: 24px;
+    }
+
+    .home_task_preview {
+        width: 100%;
+        max-width: 95%;
+    }
+
+    .task_preview {
+        max-height: 150px;
+    }
+}
+
+
+

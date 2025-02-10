@@ -1,0 +1,19 @@
+/* Task Preview */
+.preview_task_box {
+    margin: 1rem;
+    padding: 1rem;
+    padding-left: 0;
+    padding-right: 0;
+    color: antiquewhite;
+    border: 2px solid rgba(255, 255, 255, 0.33);
+    border-radius: 10px;
+}
+
+.task {
+    margin: 0.5rem;
+    padding: 0.5rem;
+    width: 15rem;
+    height: 8rem;
+    border: 2px solid rgba(255, 255, 255, 0.33);
+    border-radius: 8px;
+}
